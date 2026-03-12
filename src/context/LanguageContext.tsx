@@ -21,7 +21,10 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.nav': 'Navigation',
     'footer.legal': 'Legal',
     'footer.privacy': 'Privacy Policy',
-    'footer.terms': 'Terms of Use',
+    'footer.about': 'About Us',
+    'footer.contact': 'Contact Us',
+    'footer.terms': 'Terms and Conditions',
+    'footer.disclaimer': 'Disclaimer',
     'footer.disclosures': 'Disclosures',
     'footer.rights': '© 2026 K-Equity Analysis. All rights reserved.',
     'article.back': 'Back to Analysis',
@@ -52,7 +55,12 @@ const translations: Record<Language, Record<string, string>> = {
     'search.title': 'Search Results',
     'search.noResults': 'No results found for',
     'search.articles': 'Analysis Articles',
-    'search.news': 'Market Briefs'
+    'search.news': 'Market Briefs',
+    'cookie.title': 'Cookie Settings',
+    'cookie.description': 'We use cookies to enhance your browsing experience and analyze our traffic. Please choose your preference.',
+    'cookie.allowAll': 'Allow all cookies',
+    'cookie.rejectAll': 'Reject all cookies',
+    'cookie.blockThirdParty': 'Block third-party cookies'
   },
   ko: {
     'nav.home': '홈',
@@ -66,7 +74,10 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.nav': '네비게이션',
     'footer.legal': '법적 고지',
     'footer.privacy': '개인정보 처리방침',
+    'footer.about': '회사 소개',
+    'footer.contact': '문의하기',
     'footer.terms': '이용 약관',
+    'footer.disclaimer': '면책 고지',
     'footer.disclosures': '공시 사항',
     'footer.rights': '© 2026 K-Equity Analysis. 모든 권리 보유.',
     'article.back': '분석으로 돌아가기',
@@ -97,7 +108,12 @@ const translations: Record<Language, Record<string, string>> = {
     'search.title': '검색 결과',
     'search.noResults': '에 대한 검색 결과가 없습니다',
     'search.articles': '분석 기사',
-    'search.news': '시장 브리핑'
+    'search.news': '시장 브리핑',
+    'cookie.title': '쿠키 설정',
+    'cookie.description': '당사는 귀하의 브라우징 경험을 개선하고 트래픽을 분석하기 위해 쿠키를 사용합니다. 선호하는 설정을 선택해 주세요.',
+    'cookie.allowAll': '모든 쿠키 허용',
+    'cookie.rejectAll': '모든 쿠키 거부',
+    'cookie.blockThirdParty': '제3자 쿠키 차단'
   }
 };
 

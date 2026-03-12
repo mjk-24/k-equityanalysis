@@ -70,7 +70,7 @@ export const Navigation: React.FC = () => {
                 className="flex items-center gap-2 px-3 py-1.5 text-xs font-bold text-zinc-600 hover:text-jpm-teal border border-zinc-200 hover:border-jpm-teal transition-all rounded-sm uppercase tracking-widest"
               >
                 <Globe size={16} />
-                {language === 'en' ? '한' : 'ENG'}
+                {language === 'en' ? '한' : 'EN'}
               </button>
 
               <button className="md:hidden p-2 text-zinc-600">

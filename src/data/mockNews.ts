@@ -8,7 +8,7 @@ export const mockNews: NewsItem[] = [
     source: 'K-Equity Analysis',
     time: 'Just now',
     category: 'Market',
-    date: 'Feb 26, 2026',
+    date: 'Mar 11, 2026',
     content: `
 KOSPI reached a new all-time high today, passing the 6300-point mark just a day after passing the 6000-point threshold. NVIDIA’s earnings surprise pushed Samsung Electronics (KRX: 005930) and SK Hynix (KRX: 000660), which in total account for nearly 40% of KOSPI’s market cap, to record levels.
 
