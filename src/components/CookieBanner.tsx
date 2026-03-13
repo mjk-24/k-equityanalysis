@@ -10,10 +10,7 @@ export const CookieBanner: React.FC = () => {
   useEffect(() => {
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 1000);
-      return () => clearTimeout(timer);
+      setIsVisible(true);
     }
   }, []);
 
@@ -25,12 +22,20 @@ export const CookieBanner: React.FC = () => {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          className="fixed bottom-0 left-0 right-0 z-[100] p-4 md:p-6"
-        >
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/20 backdrop-blur-[2px] z-[9998]"
+            onClick={() => setIsVisible(false)}
+          />
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            className="fixed bottom-0 left-0 right-0 z-[9999] p-4 md:p-6"
+          >
           <div className="max-w-4xl mx-auto bg-white border border-zinc-200 shadow-2xl rounded-xl overflow-hidden">
             <div className="p-6 md:p-8 flex items-start gap-6 relative">
               <div className="bg-jpm-off-white p-4 rounded-full text-jpm-teal shrink-0 mt-1">
@@ -78,7 +83,8 @@ export const CookieBanner: React.FC = () => {
             </div>
           </div>
         </motion.div>
-      )}
-    </AnimatePresence>
-  );
+      </>
+    )}
+  </AnimatePresence>
+);
 };

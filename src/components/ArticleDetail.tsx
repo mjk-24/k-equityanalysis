@@ -46,11 +46,6 @@ export const ArticleDetail: React.FC = () => {
           <span className="text-xs font-bold text-jpm-teal uppercase tracking-[0.2em]">
             {article.ticker}
           </span>
-          {article.targetPrice !== 'N/A' && (
-            <span className="text-xs font-bold text-zinc-400 uppercase tracking-widest">
-              {t('article.targetPrice')}: <span className="text-jpm-brown ml-1">{article.targetPrice}</span>
-            </span>
-          )}
         </div>
 
         <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-jpm-brown mb-12 leading-[1.1]">

@@ -29,6 +29,5 @@ export interface Article {
   date: string;
   ticker: string;
   rating: 'Buy' | 'Hold' | 'Sell';
-  targetPrice: string;
   imageUrl: string;
 }
