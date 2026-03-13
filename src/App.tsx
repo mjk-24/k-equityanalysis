@@ -9,9 +9,11 @@ import { NewsDetail } from './components/NewsDetail';
 import { SearchResults } from './components/SearchResults';
 import { LegalPage } from './components/LegalPage';
 import { CookieBanner } from './components/CookieBanner';
+import { ScrollToTop } from './components/ScrollToTop';
 import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { PRIVACY_POLICY } from './constants/legal';
 
 const HomePage: React.FC = () => {
   const { t } = useLanguage();
@@ -106,7 +108,7 @@ const AppContent: React.FC = () => {
         <Route path="/article/:id" element={<ArticleDetail />} />
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/search" element={<SearchResults />} />
-        <Route path="/privacy" element={<LegalPage title={t('footer.privacy')} date="Mar 11, 2026" />} />
+        <Route path="/privacy" element={<LegalPage title="Privacy Policy for K-Equity Analysis" date="Mar 13, 2026" content={PRIVACY_POLICY} />} />
         <Route path="/terms" element={<LegalPage title={t('footer.terms')} date="Mar 11, 2026" />} />
         <Route path="/about" element={<LegalPage title={t('footer.about')} date="Mar 11, 2026" />} />
         <Route path="/contact" element={<LegalPage title={t('footer.contact')} date="Mar 11, 2026" />} />
@@ -160,6 +162,7 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <LanguageProvider>
         <AppContent />
       </LanguageProvider>

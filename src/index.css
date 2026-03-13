@@ -24,5 +24,7 @@
 
 .markdown-body h1 { @apply text-3xl font-bold mb-6 mt-8 font-serif text-jpm-brown; }
 .markdown-body h2 { @apply text-2xl font-bold mb-4 mt-6 font-serif text-jpm-brown; }
+.markdown-body h3 { @apply text-xl font-bold mb-3 mt-5 font-serif text-jpm-brown; }
 .markdown-body p { @apply mb-4; }
 .markdown-body ul { @apply list-disc pl-6 mb-4; }
+.markdown-body strong { @apply font-bold text-jpm-brown; }
