@@ -142,7 +142,7 @@ SK하이닉스에 대한 우려는 삼성전자의 우려와 상당히 유사합
     date: 'Mar 10, 2026',
     ticker: 'KRX:000660',
     rating: 'Buy',
-    imageUrl: 'https://images.unsplash.com/photo-1620283085439-39620a1e21c4?auto=format&fit=crop&q=80&w=1200&h=600'
+    imageUrl: 'https://images.pexels.com/photos/2105927/pexels-photo-2105927.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop'
   },
   {
     id: '4',
@@ -326,6 +326,6 @@ HD현대일렉트릭은 글로벌 그리드 현대화와 AI 데이터 센터의 
     date: 'Mar 6, 2026',
     ticker: 'KRX:267250',
     rating: 'Buy',
-    imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200&h=600'
+    imageUrl: 'https://images.pexels.com/photos/34070726/pexels-photo-34070726.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop'
   }
 ];
