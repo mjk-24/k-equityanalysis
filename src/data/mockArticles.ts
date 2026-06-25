@@ -199,7 +199,7 @@ While above reasons may or may not materialize, but it seems undeniable that Kor
     date: 'Mar 9, 2026',
     ticker: 'KRX:003490',
     rating: 'Buy',
-    imageUrl: 'https://images.unsplash.com/photo-1520437358207-323b43b50729?auto=format&fit=crop&q=80&w=1200&h=600'
+    imageUrl: 'https://images.pexels.com/photos/32279001/pexels-photo-32279001.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop'
   },
   {
     id: '5',
@@ -285,7 +285,7 @@ As the Korean stock market becomes more mature with previously mentioned changes
     date: 'Mar 7, 2026',
     ticker: 'KRX:006800',
     rating: 'Buy',
-    imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1200&h=600'
+    imageUrl: 'https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop'
   },
   {
     id: '7',
