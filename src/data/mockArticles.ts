@@ -2,6 +2,55 @@ import { Article } from '../types';
 
 export const mockArticles: Article[] = [
   {
+    id: '8',
+    title: 'Hyundai Motor: Driving Through the Transition',
+    title_ko: '현대자동차: 전환의 한가운데에서',
+    excerpt: 'Hyundai Motor is racing to lead in EVs, software-defined vehicles, and robotics, leaning on its hybrid lineup as a bridge through a cooling global EV demand cycle.',
+    excerpt_ko: '현대자동차는 전기차, 소프트웨어 정의 차량(SDV), 로보틱스 분야에서 선도자가 되기 위해 속도를 내고 있으며, 냉각되는 글로벌 전기차 수요 속에서 하이브리드 라인업을 가교로 삼고 있습니다.',
+    content: `
+# Hyundai Motor: Driving Through the Transition
+
+Hyundai Motor Company (KRX: 005380) was founded in 1967 by Chung Ju-Yung as part of the broader Hyundai Group, and rose to prominence in 1975 with the Pony, the first mass-produced car independently designed and engineered by a Korean manufacturer. Five decades later, the company is attempting one of the more ambitious transformations in the global auto industry: becoming a leader rather than a fast-follower across electric vehicles, software-defined vehicles, and robotics, all while the combustion and hybrid vehicles it still sells fund the bet.
+
+The company's dedicated EV platform, E-GMP, underpins the IONIQ lineup (5, 6, and 9), which built an early reputation for fast-charging performance that outpaced much of the early EV field. But global EV demand cooled faster than most automakers planned for, and Hyundai's response has been to lean harder into hybrids as a bridge, a segment where its lineup is comparatively strong, while continuing to build out EV manufacturing capacity rather than retreat from it.
+
+That capacity bet centers on the Hyundai Motor Group Metaplant America (HMGMA) in Georgia, a dedicated EV and battery complex built largely to satisfy the domestic-assembly and battery-sourcing requirements tied to U.S. EV incentives. Whether that bet continues to pay off depends heavily on the durability of U.S. EV and trade policy, something Hyundai has comparatively little control over despite the scale of capital already committed.
+
+Beyond the car business itself, Hyundai has been steadily building a second growth story around robotics and software. Its acquisition of Boston Dynamics gave it a foothold in advanced robotics that few legacy automakers can claim, and the longer-term thesis is that the same software stack underpinning autonomous driving, robotics, and software-defined vehicles can be shared and monetized across the group. It is a thesis that takes years to prove out, and markets have historically been reluctant to give automakers credit for software ambitions until the revenue actually shows up in the numbers.
+
+Geographically, the 2024 listing of its Indian subsidiary, Hyundai Motor India, gave the group both a war chest and a direct line into one of the few large auto markets still growing demographically, a useful hedge against maturing demand in Korea, the U.S., and Europe.
+
+The risks are not small. Chinese EV makers continue to compete aggressively on price in markets where Hyundai has historically been strong, won exchange-rate swings can move margins as much as any single product launch, and domestic labor negotiations remain a recurring source of cost pressure. Tariff policy on autos and parts, particularly in the U.S., is also a variable largely outside management's control.
+
+Hyundai's bet is that staying disciplined across hybrids, EVs, software, and robotics simultaneously is a more durable strategy than picking one lane early. Whether that diversification reads as strength or as a lack of focus will likely depend on which of those bets shows revenue first.
+
+*The information provided is for informational purposes only and does not constitute financial or investment advice. Any investment decisions are made solely at your own risk. Past performance is not indicative of future results.*
+    `,
+    content_ko: `
+# 현대자동차: 전환의 한가운데에서
+
+현대자동차(KRX: 005380)는 1967년 정주영 회장이 현대그룹의 일원으로 설립했으며, 1975년 한국 제조사가 독자적으로 설계하고 개발한 최초의 대량생산 자동차인 '포니(Pony)'로 명성을 얻었습니다. 50년이 지난 지금, 현대자동차는 전기차, 소프트웨어 정의 차량(SDV), 로보틱스 전 분야에서 추격자가 아닌 선도자가 되겠다는 글로벌 자동차 산업에서 가장 야심찬 전환 중 하나를 시도하고 있습니다. 이 모든 시도는 여전히 판매되고 있는 내연기관 및 하이브리드 차량이 자금을 대고 있습니다.
+
+현대자동차의 전용 전기차 플랫폼인 E-GMP는 초기 전기차 시장에서 대부분의 경쟁사를 앞서는 급속 충전 성능으로 명성을 쌓은 아이오닉(IONIQ) 라인업(5, 6, 9)의 기반이 되었습니다. 하지만 글로벌 전기차 수요는 대부분의 자동차 제조사들이 예상했던 것보다 더 빠르게 냉각되었고, 현대자동차는 비교적 강점을 가진 하이브리드 차량을 가교(bridge)로 더욱 강화하는 방향으로 대응하면서도, 전기차 생산 능력 확충을 후퇴시키지 않고 계속 이어가고 있습니다.
+
+이러한 생산 능력에 대한 투자는 미국 전기차 인센티브와 연계된 현지 생산 및 배터리 조달 요건을 충족하기 위해 건설된 전용 전기차·배터리 단지인 조지아주의 현대자동차그룹 메타플랜트 아메리카(HMGMA)를 중심으로 이루어지고 있습니다. 이 투자가 계속 성과를 거둘지는 이미 투입된 막대한 자본 규모에도 불구하고 현대자동차가 비교적 통제력을 갖기 어려운 미국의 전기차 및 통상 정책의 지속성에 크게 좌우됩니다.
+
+자동차 사업 자체를 넘어, 현대자동차는 로보틱스와 소프트웨어를 중심으로 두 번째 성장 스토리를 꾸준히 구축해 왔습니다. 보스턴 다이내믹스(Boston Dynamics) 인수를 통해 기존 레거시 자동차 제조사들이 거의 갖추지 못한 첨단 로보틱스 역량을 확보했으며, 장기적인 논제는 자율주행, 로보틱스, 소프트웨어 정의 차량을 뒷받침하는 동일한 소프트웨어 스택을 그룹 전반에서 공유하고 수익화할 수 있다는 것입니다. 이는 입증하는 데 수년이 걸리는 논제이며, 시장은 전통적으로 실제 매출 숫자로 나타나기 전까지는 자동차 제조사의 소프트웨어 야망에 높은 평가를 부여하는 데 인색했습니다.
+
+지역적으로는, 2024년 인도 법인인 현대자동차인디아(Hyundai Motor India)의 상장을 통해 막대한 자금과 함께 인구통계학적으로 여전히 성장하고 있는 몇 안 되는 대형 자동차 시장에 대한 직접적인 접근권을 확보했습니다. 이는 한국, 미국, 유럽에서의 성숙해지는 수요에 대한 유용한 헤지(hedge) 역할을 합니다.
+
+위험 요소도 적지 않습니다. 중국 전기차 제조사들은 현대자동차가 전통적으로 강세를 보였던 시장에서 가격 경쟁력을 앞세워 공격적으로 경쟁하고 있으며, 원화 환율 변동은 어떤 단일 신차 출시만큼이나 마진에 큰 영향을 줄 수 있습니다. 또한 국내 노사 협상은 반복적으로 발생하는 비용 압박의 원인으로 남아 있습니다. 특히 미국의 자동차 및 부품에 대한 관세 정책 역시 경영진이 통제하기 어려운 변수입니다.
+
+현대자동차의 베팅은 하이브리드, 전기차, 소프트웨어, 로보틱스 전 분야에서 동시에 규율을 유지하는 것이 한 분야를 일찍 선택하는 것보다 더 지속 가능한 전략이라는 것입니다. 이러한 다각화가 강점으로 읽힐지 혹은 집중력 부족으로 읽힐지는 이들 베팅 중 어느 것이 먼저 매출로 증명되는지에 따라 달라질 것입니다.
+
+*제공된 정보는 정보 제공 목적으로만 사용되며 금융 또는 투자 자문을 구성하지 않습니다. 모든 투자 결정은 전적으로 귀하의 책임하에 이루어집니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.*
+    `,
+    date: 'Jun 25, 2026',
+    ticker: 'KRX:005380',
+    rating: 'Buy',
+    imageUrl: 'https://picsum.photos/seed/hyundai-motor-005380/1200/600'
+  },
+  {
     id: '1',
     title: 'Samsung Electronics: The Rebirth',
     title_ko: '삼성전자: 부활',
