@@ -48,7 +48,7 @@ Hyundai's bet is that staying disciplined across hybrids, EVs, software, and rob
     date: 'Jun 25, 2026',
     ticker: 'KRX:005380',
     rating: 'Buy',
-    imageUrl: 'https://picsum.photos/seed/hyundai-motor-005380/1200/600'
+    imageUrl: 'https://images.pexels.com/photos/17534546/pexels-photo-17534546.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop'
   },
   {
     id: '1',
