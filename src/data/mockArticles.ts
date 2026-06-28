@@ -2,6 +2,61 @@ import { Article } from '../types';
 
 export const mockArticles: Article[] = [
   {
+    id: '9',
+    title: 'Samsung Electro-Mechanics: The Quiet Backbone of the AI Boom',
+    title_ko: '삼성전기: AI 붐을 떠받치는 조용한 핵심축',
+    excerpt: 'Samsung Electro-Mechanics, the Samsung Group affiliate behind MLCCs and FC-BGA substrates, is riding the AI server and high-end smartphone cycle, but faces a maturing core business.',
+    excerpt_ko: 'MLCC와 FC-BGA 기판을 생산하는 삼성그룹 계열사 삼성전기는 AI 서버와 프리미엄 스마트폰 수요 사이클의 수혜를 받고 있지만, 핵심 사업의 성숙화라는 과제도 안고 있습니다.',
+    content: `
+# Samsung Electro-Mechanics: The Quiet Backbone of the AI Boom
+
+Samsung Electro-Mechanics (KRX: 009150) rarely gets the attention that Samsung Electronics or SK Hynix do, despite sitting inside nearly every piece of modern electronics that matters. The company is one of the world's largest makers of Multilayer Ceramic Capacitors (MLCCs), the tiny passive components that filter and stabilize electrical current in smartphones, servers, electric vehicles, and now, AI accelerators.
+
+![Multilayer ceramic capacitors (MLCCs) mounted on a printed circuit board](https://upload.wikimedia.org/wikipedia/commons/1/1b/Ceramic_capacitors_mounted_on_a_PCB.jpg)
+*Multilayer ceramic capacitors mounted on a PCB. Photo: Giovanna 27 / Wikimedia Commons, CC BY 4.0.*
+
+An MLCC is a deceptively simple part: alternating layers of ceramic dielectric and metal electrodes stacked into a component smaller than a grain of rice, yet capable of holding enough charge to smooth out power delivery to sensitive chips. A single high-end smartphone can contain over 1,000 of them; a single AI server board can require several times that, since GPUs and HBM stacks are far less tolerant of power noise than a phone's application processor.
+
+That AI server demand is the company's most important growth lever right now. As NVIDIA and its peers ship more power-hungry GPU and HBM platforms, the MLCCs used inside servers need to be higher-capacitance, higher-reliability parts than the commodity MLCCs that go into appliances or low-end electronics. Samsung Electro-Mechanics has been shifting its product mix toward these higher-margin, high-capacitance MLCCs, a trend that has helped offset price pressure in the commodity tier, where Chinese suppliers like Yageo and Walsin have been narrowing the technology gap for years.
+
+The company's other major growth engine is FC-BGA (Flip Chip Ball Grid Array) substrates, the advanced packaging substrates that connect processors and AI accelerators to the rest of a circuit board. FC-BGA capacity has been one of the tightest segments in the semiconductor supply chain since the AI buildout began, and Samsung Electro-Mechanics has been investing heavily in its Busan and Vietnam facilities to capture more of that demand, competing with Japanese and Taiwanese substrate makers for next-generation, larger-panel substrate capacity.
+
+The third leg of the business, camera modules and optical components for smartphones, is the most mature and cyclical of the three. It tracks the smartphone replacement cycle closely and has historically been the segment most exposed to a slowdown in premium handset demand, though folding phones and increasingly complex multi-camera systems have kept average component value per device rising even as unit shipments stay roughly flat.
+
+The risks are concentrated around customer dependence and cyclicality. Samsung Electro-Mechanics' fortunes are still closely tied to Samsung Electronics' own handset and memory businesses as both a captive customer and a barometer of group-wide capital spending. A sharper-than-expected cooldown in AI infrastructure spending, similar to the concerns weighing on the broader Korean memory complex, would hit demand for high-end MLCCs and FC-BGA substrates simultaneously. Currency swings in the won also matter, since a meaningful share of revenue is dollar-denominated through overseas customers.
+
+Still, the structural story is one of component complexity rising faster than unit volume, which tends to favor suppliers like Samsung Electro-Mechanics that can move up the value chain rather than compete purely on price.
+
+*The information provided is for informational purposes only and does not constitute financial or investment advice. Any investment decisions are made solely at your own risk. Past performance is not indicative of future results.*
+    `,
+    content_ko: `
+# 삼성전기: AI 붐을 떠받치는 조용한 핵심축
+
+삼성전기(KRX: 009150)는 거의 모든 현대 전자기기 안에 들어가 있음에도, 삼성전자나 SK하이닉스만큼 주목받지 못하는 기업입니다. 삼성전기는 전류를 필터링하고 안정화하는 초소형 부품인 적층세라믹콘덴서(MLCC)를 생산하는 세계 최대 기업 중 하나이며, 이 부품은 스마트폰, 서버, 전기차, 그리고 이제는 AI 가속기에까지 들어갑니다.
+
+![인쇄회로기판(PCB)에 실장된 적층세라믹콘덴서(MLCC)](https://upload.wikimedia.org/wikipedia/commons/1/1b/Ceramic_capacitors_mounted_on_a_PCB.jpg)
+*PCB에 실장된 MLCC. 사진: Giovanna 27 / 위키미디어 공용, CC BY 4.0.*
+
+MLCC는 단순해 보이지만 정교한 부품입니다. 세라믹 유전체와 금속 전극을 번갈아 쌓아 쌀알보다 작은 크기로 만들지만, 민감한 칩에 전력을 안정적으로 공급할 만큼 충분한 전하를 저장할 수 있습니다. 고급 스마트폰 한 대에는 1,000개가 넘는 MLCC가 들어가며, AI 서버 보드 한 장에는 그보다 훨씬 많은 수가 필요합니다. GPU와 HBM 스택은 스마트폰의 애플리케이션 프로세서보다 전력 노이즈에 훨씬 민감하기 때문입니다.
+
+이러한 AI 서버 수요는 현재 삼성전기의 가장 중요한 성장 동력입니다. 엔비디아와 경쟁사들이 더 많은 전력을 소비하는 GPU 및 HBM 플랫폼을 출시함에 따라, 서버에 들어가는 MLCC는 가전제품이나 저가 전자제품에 사용되는 범용 MLCC보다 더 높은 정전용량과 신뢰성을 갖춰야 합니다. 삼성전기는 제품 믹스를 이러한 고마진·고용량 MLCC 쪽으로 전환해왔으며, 이는 야게오(Yageo), 월신(Walsin) 같은 중국 업체들이 수년간 기술 격차를 좁혀온 범용 시장에서의 가격 압박을 상쇄하는 데 도움이 되었습니다.
+
+삼성전기의 또 다른 주요 성장 엔진은 FC-BGA(Flip Chip Ball Grid Array) 기판, 즉 프로세서와 AI 가속기를 회로 기판의 나머지 부분과 연결하는 고급 패키징 기판입니다. FC-BGA 생산 능력은 AI 인프라 확장이 시작된 이후 반도체 공급망에서 가장 타이트한 분야 중 하나였으며, 삼성전기는 부산 및 베트남 생산 시설에 막대한 투자를 이어가며 차세대 대형 패널 기판 수요를 확보하기 위해 일본 및 대만 기판 제조사들과 경쟁하고 있습니다.
+
+세 번째 사업 축인 카메라 모듈 및 광학 부품 사업은 세 사업 중 가장 성숙하고 경기 순환적입니다. 이는 스마트폰 교체 주기와 밀접하게 연동되며, 역사적으로 프리미엄 스마트폰 수요 둔화에 가장 취약한 사업부였습니다. 다만 폴더블폰과 점점 복잡해지는 멀티 카메라 시스템 덕분에 출하량이 거의 정체되어 있는 상황에서도 기기당 평균 부품 가치는 계속 상승해왔습니다.
+
+위험 요소는 고객 의존도와 경기 순환성에 집중되어 있습니다. 삼성전기의 사업은 여전히 캡티브 고객이자 그룹 전체 자본 지출의 바로미터인 삼성전자의 휴대폰 및 메모리 사업과 밀접하게 연결되어 있습니다. 한국 메모리 업계 전반에 우려를 끼치고 있는 것과 유사하게 AI 인프라 지출이 예상보다 급격히 냉각될 경우, 고급 MLCC와 FC-BGA 기판에 대한 수요가 동시에 타격을 받을 수 있습니다. 매출의 상당 부분이 해외 고객을 통해 달러로 결제되는 만큼 원화 환율 변동도 중요한 변수입니다.
+
+그럼에도 부품의 복잡성이 출하량보다 더 빠르게 증가하는 구조적 흐름은, 단순히 가격으로 경쟁하기보다 가치 사슬의 상위 단계로 이동할 수 있는 삼성전기와 같은 공급업체에 유리하게 작용하는 경향이 있습니다.
+
+*제공된 정보는 정보 제공 목적으로만 사용되며 금융 또는 투자 자문을 구성하지 않습니다. 모든 투자 결정은 전적으로 귀하의 책임하에 이루어집니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.*
+    `,
+    date: 'Jun 28, 2026',
+    ticker: 'KRX:009150',
+    rating: 'Buy',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Ceramic_capacitors_mounted_on_a_PCB.jpg'
+  },
+  {
     id: '8',
     title: 'Hyundai Motor: Driving Through the Transition',
     title_ko: '현대자동차: 전환의 한가운데에서',
