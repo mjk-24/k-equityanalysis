@@ -2,6 +2,47 @@ import { NewsItem } from '../types';
 
 export const mockNews: NewsItem[] = [
   {
+    id: 'korea-robotics-shift',
+    title: "Shift to Automation: Korea's Transition to a Robotics Powerhouse",
+    title_ko: '자동화로의 전환: 로봇 강국으로 거듭나는 한국',
+    source: 'K-Equity Analysis',
+    time: 'Just now',
+    category: 'Market',
+    date: 'Jun 29, 2026',
+    content: `
+South Korea has held the world's highest industrial robot density for over a decade, and the country is now pushing to extend that lead from factory floors into a much broader robotics economy, spanning humanoids, logistics automation, and service robots, just as its working-age population begins to shrink.
+
+![Industrial robot arm operating in a manufacturing facility](https://images.pexels.com/photos/34207359/pexels-photo-34207359.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop)
+*Industrial robot arm in a manufacturing facility. Photo: Freek Wolsink / Pexels.*
+
+The starting point is demographic, not technological. Korea has one of the lowest birth rates in the world, and its working-age population is already contracting. Manufacturers that cannot find enough line workers are turning to automation not as a cost-cutting choice but as a continuity requirement, and the government's industrial policy has followed that logic, expanding subsidies for robot adoption among small and mid-sized manufacturers and loosening regulatory friction for service and logistics robots in warehouses, hospitals, and public spaces.
+
+Corporate Korea has been positioning for this shift for several years. Hyundai Motor Group's acquisition of Boston Dynamics gave the country's largest industrial conglomerate a direct foothold in advanced legged robotics and the broader humanoid race, an asset it has paired with its own manufacturing know-how. Samsung Electronics took a more targeted route, building a controlling stake in Rainbow Robotics, a domestic maker of collaborative robots and humanoid platforms, betting that robotics will eventually need the same kind of integrated hardware-software stack Samsung already runs in semiconductors and consumer electronics. Doosan Robotics, meanwhile, has built one of the broader collaborative robot ("cobot") lineups in the region, supplying everything from food service automation to industrial assembly lines.
+
+None of this is happening in a vacuum. Korea's industrial robot base was already among the densest in the world before this latest wave, built up over decades of automotive and electronics manufacturing. The new push is less about installing robots where there were none, and more about extending automation into sectors and tasks, services, logistics, elder care, construction, that have historically resisted it because the hardware and software were not yet good enough or cheap enough.
+
+The risks are mostly about pace and capital intensity rather than direction. Humanoid and advanced robotics platforms remain expensive and unproven at commercial scale, and Korean firms are competing against well-funded efforts from the U.S. and China, with the latter benefiting from a much larger domestic manufacturing base to iterate against. A slower-than-expected drop in robotics hardware costs, or a stumble in the software and AI models needed to make general-purpose robots useful outside controlled factory environments, would push out the timeline for the broader economic payoff, even as the underlying demographic pressure pushing Korea toward automation does not go away.
+
+*The information provided is for informational purposes only and does not constitute financial or investment advice. Any investment decisions are made solely at your own risk. Past performance is not indicative of future results.*
+    `,
+    content_ko: `
+한국은 10년 넘게 세계에서 가장 높은 산업용 로봇 밀도를 유지해 왔으며, 이제는 그 우위를 공장 현장을 넘어 휴머노이드, 물류 자동화, 서비스 로봇을 포괄하는 훨씬 더 넓은 로봇 경제로 확장하려 하고 있습니다. 때마침 생산가능인구는 줄어들기 시작하고 있습니다.
+
+![제조 현장에서 작동 중인 산업용 로봇 팔](https://images.pexels.com/photos/34207359/pexels-photo-34207359.jpeg?cs=srgb&fm=jpg&auto=compress&q=80&w=1200&h=600&fit=crop)
+*제조 현장에서 작동 중인 산업용 로봇 팔. 사진: Freek Wolsink / Pexels.*
+
+이러한 흐름의 출발점은 기술이 아니라 인구 구조에 있습니다. 한국은 세계 최저 수준의 출산율을 보이고 있으며, 생산가능인구는 이미 줄어들기 시작했습니다. 충분한 생산직 인력을 구하지 못하는 제조업체들은 단순히 비용 절감이 아니라 사업 지속을 위한 필수 조건으로서 자동화로 눈을 돌리고 있으며, 정부의 산업 정책 역시 이러한 논리를 따라가고 있습니다. 중소 제조업체의 로봇 도입에 대한 보조금을 확대하고, 물류창고·병원·공공장소에서 사용되는 서비스 및 물류 로봇에 대한 규제 마찰을 완화하고 있습니다.
+
+한국 기업들은 이미 수년 전부터 이러한 전환에 대비해 자리를 잡아왔습니다. 현대자동차그룹의 보스턴 다이내믹스 인수는 한국 최대 산업 그룹에게 첨단 보행 로봇과 더 넓은 휴머노이드 경쟁에서의 직접적인 발판을 마련해 주었으며, 이는 현대차 자체의 제조 노하우와 결합되었습니다. 삼성전자는 보다 표적화된 방식을 택해, 협동로봇 및 휴머노이드 플랫폼을 만드는 국내 기업인 레인보우로보틱스의 경영권을 확보했습니다. 이는 로봇 산업이 결국 삼성이 반도체와 가전 사업에서 이미 운영하고 있는 것과 같은 통합된 하드웨어-소프트웨어 스택을 필요로 하게 될 것이라는 판단에 따른 베팅입니다. 한편 두산로보틱스는 외식업 자동화부터 산업용 조립 라인까지 다양한 분야에 공급되는, 이 지역에서 가장 폭넓은 협동로봇("코봇") 라인업 중 하나를 구축해왔습니다.
+
+이 모든 것이 진공 상태에서 벌어지고 있는 것은 아닙니다. 한국의 산업용 로봇 기반은 이번 새로운 흐름 이전부터 이미 자동차 및 전자제품 제조업에서 수십 년에 걸쳐 구축되어 세계에서 가장 밀도가 높은 수준이었습니다. 새로운 흐름은 로봇이 없던 곳에 새로 설치하는 것이라기보다, 하드웨어와 소프트웨어가 충분히 좋지 않거나 충분히 저렴하지 않아 역사적으로 자동화에 저항해 온 서비스업, 물류, 노인 돌봄, 건설 등의 분야와 작업으로 자동화를 확장하는 데 더 가깝습니다.
+
+위험 요소는 방향성보다는 속도와 자본 집약도에 관한 것이 대부분입니다. 휴머노이드 및 첨단 로봇 플랫폼은 여전히 비싸고 상업적 규모에서는 아직 입증되지 않았으며, 한국 기업들은 미국과 중국의 풍부한 자금력을 갖춘 경쟁자들과 맞서야 합니다. 특히 중국은 훨씬 더 큰 국내 제조 기반을 바탕으로 반복적인 개선을 할 수 있다는 이점이 있습니다. 로봇 하드웨어 비용 하락이 예상보다 느리게 진행되거나, 범용 로봇을 통제된 공장 환경 밖에서도 유용하게 만드는 데 필요한 소프트웨어 및 AI 모델 개발이 차질을 빚는다면, 광범위한 경제적 성과가 나타나는 시점은 뒤로 밀릴 수 있습니다. 다만 한국을 자동화로 밀어붙이는 근본적인 인구 구조적 압박 자체는 사라지지 않을 것입니다.
+
+*제공된 정보는 정보 제공 목적으로만 사용되며 금융 또는 투자 자문을 구성하지 않습니다. 모든 투자 결정은 전적으로 귀하의 책임하에 이루어집니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.*
+    `,
+  },
+  {
     id: 'kospi-6300',
     title: 'KOSPI Continues to Break Record Highs, Reaching 6300 Points',
     title_ko: '코스피 사상 최고치 경신 지속, 6300포인트 도달',
