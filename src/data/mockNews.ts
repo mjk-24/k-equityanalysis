@@ -2,6 +2,236 @@ import { NewsItem } from '../types';
 
 export const mockNews: NewsItem[] = [
   {
+    id: 'semiconductor-types-guide',
+    title: 'The Semiconductor Landscape: A Complete Guide to Every Type of Chip',
+    title_ko: '반도체 지형도: 모든 유형의 칩에 대한 완전한 가이드',
+    source: 'K-Equity Analysis',
+    time: 'Just now',
+    category: 'Tech',
+    date: 'Jul 1, 2026',
+    content: `
+# The Semiconductor Landscape: A Complete Guide to Every Type of Chip
+
+The word "semiconductor" is thrown around constantly in business and finance media, but it is rarely unpacked with any precision. When analysts talk about "the semiconductor cycle," they often conflate industries that operate on fundamentally different timelines, serve different customers, and respond to different economic forces. A memory chip and a power transistor are both semiconductors in the same way that a cargo freighter and a speedboat are both boats — the classification tells you almost nothing about the underlying economics.
+
+This guide maps the entire landscape: what each category of semiconductor does, how it is made, and what drives demand for it.
+
+![Silicon semiconductor wafer under inspection in a cleanroom fab](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wafer_2_Zoll_bis_8_Zoll_2.jpg/1200px-Wafer_2_Zoll_bis_8_Zoll_2.jpg)
+*Silicon wafers of varying sizes. Photo: Stahlkocher / Wikimedia Commons, CC BY-SA 3.0.*
+
+---
+
+## Part I: The Functional Taxonomy
+
+### 1. Memory Semiconductors
+
+**DRAM (Dynamic Random-Access Memory)**
+DRAM is the working memory of any computing system. Each bit is stored as a charge in a tiny capacitor paired with a transistor that must be refreshed thousands of times per second. The economics of DRAM are structurally oligopolistic: Samsung Electronics, SK Hynix, and Micron Technology control roughly 95% of global supply. Barriers to entry are brutally high — billions in capex, decades of yield management expertise, and 12-18 month customer qualification cycles.
+
+HBM (High Bandwidth Memory) stacks conventional DRAM dies vertically using Through-Silicon Vias (TSVs) connected to a logic chip via an interposer, delivering dramatically higher bandwidth at lower power — essential for AI accelerators like NVIDIA's H100 and B200 GPUs.
+
+**NAND Flash**
+Non-volatile storage found in SSDs, smartphones, and data center arrays. The decade's biggest structural trend has been the shift from 2D to 3D NAND — Samsung's ninth-generation V-NAND (2024) stacks over 280 layers. More layers per die means more bits per unit area and lower cost per bit, even as per-layer cost rises. The NAND market is more competitive than DRAM, with YMTC (China) emerging as the most significant new entrant in recent years.
+
+**SRAM and NOR Flash**
+SRAM uses a six-transistor latch — no refresh needed, faster access, but far more area per bit than DRAM. It lives on-chip as cache in CPUs, GPUs, and AI accelerators. NOR Flash allows random bit-access (unlike NAND's page-based reads), enabling code execution directly from storage in microcontrollers and automotive ECUs.
+
+---
+
+### 2. Logic Semiconductors
+
+**CPUs (Central Processing Units)**
+Intel's x86 architecture has dominated PC and server markets for decades; ARM's RISC architecture dominates mobile. The AI era has simultaneously elevated and commoditized the CPU: essential for orchestration, but increasingly a supporting actor as raw compute shifts to GPU/ASIC accelerators.
+
+**GPUs (Graphics Processing Units)**
+Originally designed for parallel 3D graphics rendering, GPUs proved extraordinarily good at the matrix multiplication operations that underpin neural network training and inference. NVIDIA recognized this inflection first — CUDA (2006) is the key moat. AMD's MI300X and Intel's Gaudi are competitive on hardware benchmarks; neither has meaningfully eroded NVIDIA's software ecosystem dominance built over nearly two decades.
+
+**FPGAs (Field-Programmable Gate Arrays)**
+Chips whose logic can be reprogrammed after manufacture, sitting between ASICs and CPUs: faster and more power-efficient than a CPU for a specific task, but without the NRE cost of a custom chip. Intel's acquisition of Altera (2015) and AMD's acquisition of Xilinx (2022) reflected the strategic value of reprogrammability in data centers and 5G base stations.
+
+**ASICs (Application-Specific Integrated Circuits)**
+Designed for exactly one purpose and optimized relentlessly for it. Google's TPU, Amazon's Trainium and Inferentia, Apple's Neural Engine — all examples. The rise of hyperscaler custom silicon (Google, Amazon, Microsoft, Apple, Meta all designing in-house, fabricated by TSMC and Samsung Foundry) is one of the decade's most significant structural shifts, reducing merchant chip vendor leverage and shifting surplus to the hyperscalers themselves.
+
+---
+
+### 3. Analog and Mixed-Signal Semiconductors
+
+Analog semiconductors deal with continuous signals — temperature, pressure, sound, light, radio waves — rather than discrete digital 0s and 1s. Unlike digital, analog does not benefit linearly from process scaling; competitive advantages come from design expertise and customer relationships, not leading-edge nodes. Chips often run on mature 130nm-350nm processes. Key subcategories:
+
+- **RF semiconductors**: The invisible backbone of 4G, 5G, Wi-Fi, Bluetooth, GPS. 5G handsets require significantly more RF content per device than 4G equivalents.
+- **Data converters (ADCs/DACs)**: Bridge between the physical and digital worlds; in every sensor interface, audio system, and wireless transceiver.
+- **Op-amps and signal chain**: Industrial, medical, and automotive signal conditioning. Texas Instruments leads with a catalog of tens of thousands of SKUs.
+
+---
+
+### 4. Microcontrollers (MCUs)
+
+Billions ship annually into dishwashers, antilock brakes, industrial sensors, and thousands of other applications. An MCU integrates a processor core, flash memory, RAM, and peripherals on one chip. The automotive market is the fastest-growing segment — a modern EV can contain 100 or more MCUs managing everything from the battery management system to the door handles.
+
+---
+
+### 5. Power Semiconductors
+
+Control the flow of electrical power in every power supply, motor drive, inverter, and charger.
+
+**Silicon-based:**
+- **MOSFETs**: Dominant for low-to-medium voltage switching (Infineon, ON Semi, STMicro, Vishay)
+- **IGBTs**: Workhorse of medium-to-high voltage conversion — EV traction inverters, industrial motor drives, HVDC (Infineon leads)
+
+**Wide-Bandgap (WBG) — the structural shift:**
+SiC and GaN have wider bandgaps than silicon, enabling higher breakdown voltages, switching frequencies, and operating temperatures.
+
+- **Silicon Carbide (SiC)**: Tesla catalyzed automotive SiC adoption in 2017 (Model 3 inverter, STMicro SiC MOSFETs). Every major EV platform now uses SiC or is migrating toward it. Market expected to grow from ~$3B (2023) to >$10B (2027). Key strategic gap for Korea: while Korean companies dominate silicon memory and logic, the SiC/GaN value chain is led by European (Infineon, STMicro), American (Wolfspeed, Onsemi), and Japanese (ROHM, Mitsubishi) companies.
+
+- **Gallium Nitride (GaN)**: Optimal below 650V at very high switching frequencies. Dominates fast chargers, 5G base station amplifiers, and data center power supplies.
+
+---
+
+### 6. Optoelectronics and Sensors
+
+**Image sensors (CMOS Image Sensors / CIS)**: The digital camera in every smartphone, surveillance system, automotive camera, and machine vision system. Sony dominates with ~50% global market share; Samsung is second — one of the few categories where a Japanese company holds global volume leadership.
+
+**MEMS (Micro-Electro-Mechanical Systems)**: Microscopic mechanical structures integrated with electronics on the same die — accelerometers and gyroscopes in smartphones (Bosch, STMicro), microphones (Knowles, TDK), pressure sensors, inkjet heads. MEMS require unique etch and bonding process steps distinct from standard CMOS, creating a niche with meaningful barriers.
+
+---
+
+## Part II: The Materials Dimension
+
+| Material | Bandgap | Key Properties | Primary Applications |
+|----------|---------|----------------|----------------------|
+| Silicon (Si) | 1.12 eV | Mature supply chain, excellent oxide, scales well | CPUs, DRAM, NAND, MCUs, most analog |
+| Gallium Arsenide (GaAs) | 1.42 eV | High electron mobility, excellent RF performance | RF amplifiers, solar cells |
+| Indium Phosphide (InP) | 1.35 eV | Highest electron mobility, good for laser diodes | Optical transceivers, millimeter-wave |
+| Silicon Carbide (SiC) | 3.26 eV | High breakdown voltage, high temp, low loss | EV inverters, grid infrastructure |
+| Gallium Nitride (GaN) | 3.4 eV | Very high electron velocity, compact | Fast chargers, 5G amplifiers, power converters |
+| Gallium Oxide (Ga₂O₃) | 4.8 eV | Ultra-high breakdown voltage (emerging) | Very high voltage (research stage) |
+
+Silicon's dominance is an accident of history and chemistry: a good-but-not-great semiconductor with an extraordinary natural oxide (SiO₂) and second-most-abundant crust element. Wide-bandgap materials offer superior high-voltage and high-temperature performance but are harder to crystallize, harder to fabricate, and correspondingly more expensive — economics only justify the premium when performance advantage is critical.
+
+---
+
+## Part III: Manufacturing Dimension
+
+**Logic (leading edge):** TSMC, Samsung Foundry, and Intel Foundry are the only companies capable of sub-3nm. A leading-edge fab costs $20B+ to build — the barrier that collapsed the viable competitor count from dozens in the 1990s to three in 2025.
+
+**Memory:** The DRAM fab investment cycle takes 2-3 years from capex decision to production, creating structural supply-demand lag — the root cause of the DRAM pricing cycle that has defined the memory industry for decades.
+
+**Analog:** Runs on fully-depreciated mature nodes (130-180nm). Texas Instruments' ownership of 300mm mature fabs is a structural cost moat newer entrants cannot easily replicate.
+
+**Power/WBG:** SiC devices require SiC single-crystal substrates grown by vapor-phase epitaxy — slow and expensive. Wolfspeed is the dominant substrate supplier; substrate supply tightness has been the supply chain bottleneck for the entire SiC ecosystem. The industry is transitioning from 150mm to 200mm SiC wafers, which will reduce cost per die and unlock the next growth phase.
+
+---
+
+## Part IV: Investment Implications
+
+**Cycle timing differs radically by category.** DRAM and NAND are deeply cyclical — inventory corrections and pricing collapses occur every few years. Power semiconductors are less cyclical and tied to secular structural themes (EV adoption, renewable energy). Analog is more stable but correlated to broad industrial demand. Logic (CPUs, GPUs) in the AI era tracks hyperscaler capex cycles.
+
+**Moat sources differ.** Memory: manufacturing scale and process technology. Analog: design IP and customer relationships. Logic: software ecosystem (NVIDIA/CUDA) or architecture lock-in (x86). Power: device technology and substrate supply chain. These different moat structures imply very different competitive dynamics and durability.
+
+**Korean exposure is concentrated.** Korea's semiconductor industry is overwhelmingly concentrated in DRAM (Samsung, SK Hynix), NAND (Samsung, SK Hynix), and foundry (Samsung Foundry). Korean semiconductor stocks are highly sensitive to memory pricing cycles and AI accelerator demand, with limited exposure to the structural growth in analog, power WBG, and automotive semiconductors where European and American players are better positioned.
+
+**China's trajectory matters differently by segment.** China has made the most progress in NAND (YMTC) and trailing-edge logic (SMIC), but remains well behind in advanced DRAM and leading-edge logic. In power semiconductors, meaningful gains in silicon IGBT manufacturing. In WBG, aggressive investment but still dependent on Japanese substrate suppliers for SiC. U.S. export controls have been specifically targeted at the segments where China is closest to competing — advanced logic and HBM.
+
+The semiconductor industry is not one industry. It is seven or eight industries that share a raw material and a general manufacturing paradigm but operate on completely different demand cycles, competitive structures, and technology trajectories. Treating them as a single asset class is a category error that leads to systematic mispricing — which, for the attentive investor, is precisely where opportunity lives.
+
+*The information provided is for informational purposes only and does not constitute financial or investment advice. Any investment decisions are made solely at your own risk. Past performance is not indicative of future results.*
+    `,
+    content_ko: `
+# 반도체 지형도: 모든 유형의 칩에 대한 완전한 가이드
+
+"반도체"라는 단어는 비즈니스와 금융 미디어에서 끊임없이 등장하지만, 정밀하게 분석되는 경우는 드뭅니다. 애널리스트들이 "반도체 사이클"을 이야기할 때, 그들은 종종 근본적으로 다른 타임라인으로 작동하고, 다른 고객에게 서비스를 제공하며, 다른 경제적 힘에 반응하는 산업들을 혼동하곤 합니다. 메모리 칩과 전력 트랜지스터가 모두 반도체인 것은, 화물선과 스피드보트가 모두 보트인 것과 같습니다 — 분류 자체만으로는 그 기저의 경제학에 대해 거의 아무것도 말해주지 않습니다.
+
+![클린룸 팹에서 검사 중인 실리콘 반도체 웨이퍼](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wafer_2_Zoll_bis_8_Zoll_2.jpg/1200px-Wafer_2_Zoll_bis_8_Zoll_2.jpg)
+*다양한 크기의 실리콘 웨이퍼. 사진: Stahlkocher / 위키미디어 공용, CC BY-SA 3.0.*
+
+---
+
+## 파트 I: 기능적 분류
+
+### 1. 메모리 반도체
+
+**DRAM (동적 랜덤 액세스 메모리)**
+DRAM은 모든 컴퓨팅 시스템의 작업 메모리입니다. 삼성전자, SK하이닉스, 마이크론 테크놀로지, 이 세 회사가 전 세계 공급의 약 95%를 장악하고 있습니다. HBM(고대역폭 메모리)은 TSV를 사용해 DRAM 다이를 수직으로 적층하여 AI 가속기에 필수적인 높은 대역폭을 제공합니다.
+
+**낸드 플래시(NAND Flash)**
+비휘발성 스토리지. 삼성의 9세대 V-NAND(2024)는 280개 이상의 레이어를 적층합니다. YMTC(중국)가 가장 중요한 신규 진입자로 부상했습니다.
+
+**SRAM, NOR 플래시**
+SRAM은 CPU, GPU의 온칩 캐시로 사용되고, NOR 플래시는 마이크로컨트롤러와 자동차 ECU에서 코드를 직접 실행하는 데 사용됩니다.
+
+---
+
+### 2. 로직 반도체
+
+**CPU:** 인텔의 x86 아키텍처가 PC·서버, ARM의 RISC가 모바일을 지배합니다. AI 시대에 CPU는 필수적이지만 AI 가속기의 보조 역할로 밀려나고 있습니다.
+
+**GPU:** 엔비디아는 CUDA(2006) 기반의 생태계 해자를 구축했으며, AMD와 인텔은 하드웨어에서는 경쟁적이지만 소프트웨어 생태계 지배력에는 도전하지 못하고 있습니다.
+
+**FPGA:** 제조 후 재프로그래밍 가능한 칩. 인텔의 알테라 인수(2015), AMD의 자일링스 인수(2022)가 전략적 가치를 보여줍니다.
+
+**ASIC:** 구글 TPU, 아마존 Trainium 등 단일 목적에 최적화된 칩. 하이퍼스케일러들의 커스텀 실리콘 개발 확대가 10년간 가장 중요한 구조적 변화입니다.
+
+---
+
+### 3. 아날로그 및 혼합 신호 반도체
+
+아날로그 반도체는 온도, 압력, 소리, 빛, 전파와 같은 연속 신호를 다룹니다. 공정 스케일링의 혜택이 적어 130-350nm 노드에서 실행되며, 경쟁 우위는 설계 전문성과 고객 관계에 있습니다. RF 반도체는 4G, 5G, Wi-Fi, GPS의 기반이며, ADC/DAC는 물리적 세계와 디지털 세계를 연결합니다.
+
+---
+
+### 4. 마이크로컨트롤러(MCU)
+
+매년 수십억 개가 출하되는 지구상에서 가장 많은 반도체 기기입니다. 자동차 시장이 가장 빠르게 성장하는 세그먼트 — 현대 전기차에는 100개 이상의 MCU가 포함됩니다.
+
+---
+
+### 5. 전력 반도체
+
+**실리콘 기반:** MOSFET(저~중압), IGBT(중~고압 EV 인버터, 인피니언 선두)
+
+**와이드 밴드갭(WBG):**
+- **SiC:** 테슬라가 2017년 모델 3에 채택한 이후 EV 인버터의 표준이 되었습니다. 시장은 2023년 ~30억 달러에서 2027년 100억 달러 이상으로 성장 예상. **한국 투자자 주목:** 한국이 메모리·로직을 장악하는 동안, SiC/GaN 가치 사슬은 유럽(인피니언, STMicro), 미국(Wolfspeed, Onsemi), 일본(ROHM, 미쓰비시)이 주도합니다.
+- **GaN:** 650V 이하 고주파 스위칭에 최적 — 고속 충전기, 5G 기지국, 데이터 센터 전원 공급 장치를 지배합니다.
+
+---
+
+### 6. 광전자 소자 및 센서
+
+**이미지 센서(CIS):** 소니가 전 세계 시장 점유율 약 50%로 지배, 삼성이 2위 — 일본 기업이 글로벌 볼륨 리더십을 갖는 몇 안 되는 카테고리입니다.
+
+**MEMS:** 스마트폰의 가속도계, 자이로스코프, 마이크로폰이 모두 MEMS입니다. 표준 CMOS와 다른 고유 공정이 필요하여 높은 진입 장벽을 형성합니다.
+
+---
+
+## 파트 II: 소재의 차원
+
+| 소재 | 밴드갭 | 주요 특성 | 주요 응용 분야 |
+|------|--------|-----------|----------------|
+| 실리콘 (Si) | 1.12 eV | 성숙한 공급망, 우수한 산화물 | CPU, DRAM, NAND, MCU |
+| 갈륨 비소 (GaAs) | 1.42 eV | 높은 전자 이동도, 우수한 RF 성능 | RF 증폭기, 태양 전지 |
+| 인듐 인화물 (InP) | 1.35 eV | 최고 전자 이동도 | 광 트랜시버, 밀리미터파 |
+| 실리콘 카바이드 (SiC) | 3.26 eV | 고항복전압, 고온, 저손실 | 전기차 인버터, 그리드 |
+| 질화갈륨 (GaN) | 3.4 eV | 매우 높은 전자 속도 | 고속 충전기, 5G 증폭기 |
+| 산화갈륨 (Ga₂O₃) | 4.8 eV | 초고항복전압 (연구 단계) | 초고전압 애플리케이션 |
+
+---
+
+## 파트 III: 투자 시사점
+
+**사이클 타이밍은 카테고리별로 다릅니다.** DRAM/NAND는 극심하게 경기 순환적이고, 전력 반도체는 EV 채택·재생에너지 같은 장기 구조적 테마에 연동됩니다.
+
+**해자의 원천은 다릅니다.** 메모리는 제조 규모와 공정 기술, 아날로그는 설계 IP와 고객 관계, 로직은 소프트웨어 생태계(엔비디아/CUDA), 전력은 기기 기술과 기판 공급망이 해자입니다.
+
+**한국의 노출도는 DRAM·NAND·파운드리에 집중됩니다.** 아날로그, 전력 WBG, 자동차 반도체에서는 유럽·미국 기업이 더 유리한 포지션에 있습니다.
+
+**중국의 궤적은 세그먼트별로 다릅니다.** NAND(YMTC)와 후행 로직(SMIC)에서 가장 큰 진전을 보였고, 첨단 DRAM과 선단 로직에서는 여전히 크게 뒤처져 있습니다.
+
+반도체 산업은 하나의 산업이 아닙니다. 완전히 다른 수요 사이클, 경쟁 구조, 기술 궤적을 가진 일곱 내지 여덟 개의 산업입니다. 이를 단일 자산 클래스로 취급하는 것은 범주 오류이며, 주의 깊은 투자자에게는 바로 그 지점이 기회가 숨어있는 곳입니다.
+
+*제공된 정보는 정보 제공 목적으로만 사용되며 금융 또는 투자 자문을 구성하지 않습니다. 모든 투자 결정은 전적으로 귀하의 책임하에 이루어집니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.*
+    `,
+  },
+  {
     id: 'korea-robotics-shift',
     title: "Shift to Automation: Korea's Transition to a Robotics Powerhouse",
     title_ko: '자동화로의 전환: 로봇 강국으로 거듭나는 한국',
